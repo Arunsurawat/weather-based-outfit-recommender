@@ -24,7 +24,7 @@ export const SearchHistory = () => {
 
   return (
     <div>
-      <h4>Recent Searches:</h4>
+      <h4>Recent Searches: {history.length < 1 ? "No Data":""} </h4>
       <ul>
         {history.map((city, idx) => (
           <li key={idx} onClick={() => handleClick(city)} style={{ cursor: "pointer" }}>

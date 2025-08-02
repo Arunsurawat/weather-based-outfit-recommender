@@ -13,7 +13,7 @@ export const OutfitSuggestion = () => {
 
   return (
     <div>
-      <div className="suggestion">{suggestion}</div>;
+      <div className="suggestion">{suggestion}</div>
     </div>
   );
 };

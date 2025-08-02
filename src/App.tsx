@@ -1,14 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import { WeatherProvider } from './context/WeatherContext';
+import React, { useContext } from "react";
+import { WeatherProvider,WeatherContext } from './context/WeatherContext';
 import Home from './pages/Home';
+import './App.css'; 
+
+const AppWrapper = () => {
+  const { theme } = useContext(WeatherContext);
+  return <div className={theme}><Home /></div>;
+};
 
 function App() {
   return (
     <div className="App">
       <WeatherProvider>
-        <Home/>
+        <AppWrapper/>
       </WeatherProvider>
     </div>
   );
