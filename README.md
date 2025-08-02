@@ -80,6 +80,7 @@ npm run build
 ## 💡 Assumptions & Decisions
 
 - **API**: Used [OpenWeatherMap Current Weather API](https://openweathermap.org/current) to fetch real-time weather data.
+- **API**: Used [City Suggetions API](https://wft-geo-db.p.rapidapi.com/v1/geo/cities) to fetch real-time city data.
 - **Search History**: Stored in-memory only; cleared on page reload (no backend/localStorage used).
 - **Outfit Logic**: Simplified and rule-based. Could be extended using AI or ML.
 - **Framework**: Chose React (with TypeScript) for fast prototyping, state management via Context API for simplicity.
@@ -90,7 +91,7 @@ npm run build
 
 ## 🖼️ Screenshots
 
-> *(Add screenshots here if available)*
+>![alt text](image.png)
 
 ---
 
