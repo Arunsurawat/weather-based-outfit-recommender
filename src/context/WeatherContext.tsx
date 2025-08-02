@@ -3,7 +3,7 @@ import React, { createContext, useState } from "react";
 
 interface WeatherData {
   city: string;
-  temerature: number | null;
+  temperature: number | null;
   condition: string;
   windSpeed: number | null;
   humidity: number | null;

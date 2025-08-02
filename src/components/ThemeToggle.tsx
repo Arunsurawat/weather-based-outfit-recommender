@@ -1,7 +1,11 @@
+import React, { useContext } from "react";
+import { WeatherContext } from "../context/WeatherContext";
+
 export const ThemeToggle = () => {
+      const { theme, toggleTheme } = useContext(WeatherContext);
   return (
-    <div>
-      <h2>Theme Toggle</h2>
-    </div>
+    <button onClick={toggleTheme}>
+      Switch to {theme === "light" ? "Dark" : "Light"} Mode
+    </button>
   );
 };
